@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fulfilled-order-receipt"
+version = "0.1.0"
+description = "A small Python service that sends a receipt after an order is fulfilled."
+requires-python = ">=3.11"
+dependencies = ["pydantic[email]>=2.7,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

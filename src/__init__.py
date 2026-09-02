@@ -1,0 +1,2 @@
+"""Fulfilled-order receipt example."""
+
